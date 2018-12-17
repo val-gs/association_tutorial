@@ -1,0 +1,16 @@
+current directory: C:/Users/subaru/aws_study/Twitter_clone/association_tutorial/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+C:/Ruby25-x64/bin/ruby.exe -r ./siteconf20181217-13000-1lyexpe.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/subaru/aws_study/Twitter_clone/association_tutorial/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: C:/Users/subaru/aws_study/Twitter_clone/association_tutorial/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR="
+generating bootsnap-x64-mingw32.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/Users/subaru/aws_study/Twitter_clone/association_tutorial/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20181217-13000-18fa3bc/bootsnap
