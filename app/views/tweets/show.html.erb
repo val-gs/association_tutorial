@@ -3,3 +3,11 @@
 
 <p><span>email: </span><%= @user.email %></p>
 <p><span>ツイート内容： </span><%= @tweet.body %></p>
+
+<p>コメント</p>
+<% @comments.each do |comment| %>
+  <p><%= comment.body %><br>
+
+  <% comment_user = User.find(comment.user_id) %>
+  <%= comment_user.email %></p>
+<% end %>

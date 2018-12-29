@@ -15,4 +15,10 @@
   <% else %>
     <p><span>お気に入り数：</span><%=tweet.favorites.count %></p>
   <% end %>
+
+  <p>コメント数：<%= tweet.comments.count %>件</p>
+  <% if user_signed_in? %>
+    <%=link_to "コメントする", new_tweet_comments_path(tweet.id) %>
+  <% end %>
+
 <% end %>
