@@ -7,7 +7,5 @@
 <p>コメント</p>
 <% @comments.each do |comment| %>
   <p><%= comment.body %><br>
-
-  <% comment_user = User.find(comment.user_id) %>
-  <%= comment_user.email %></p>
+  <%= comment.user.email %></p>
 <% end %>
