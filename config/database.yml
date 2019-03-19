@@ -48,7 +48,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: association_tutorial_production
-  username: root
-  password: 
+  adapter: mysql2
+  encording: utf8
+  database: <%= ENV['RDS_DB_NAME'] %>
+  pool: <%= ENV.fetch("RAILS_MAXTHREADS") { 5 } %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
